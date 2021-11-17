@@ -6,7 +6,7 @@
 
 本书部分原稿来自 [Software-Test-Design-Guide-Cn](https://github.com/miaoyinniao/Software-Test-Design-Guide-Cn)
 
-同时，上述译本并未完成完整翻译，本译本是在原稿基础上进行了大量优化并补充完善后使用 `gitbook` 发布
+同时，上述译本并未完成完整翻译，本译本是在原稿基础上进行了大量优化并补充完善后使用 `mdbook` 发布
 
 [**点击阅读**](https://blog.noel-zhang.work/A-Practitioners-Guide-to-Software-Test-Design-zh_CN/)
 

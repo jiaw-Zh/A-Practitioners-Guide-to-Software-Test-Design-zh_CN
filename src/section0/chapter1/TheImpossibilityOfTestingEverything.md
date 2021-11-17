@@ -1,4 +1,4 @@
-### 不可能测试所有组合
+## 不可能测试所有组合
 
 在 Robert Binder 的经典书籍 *Testing Object-Oriented Systems* 中，他提出一个不可能测试所有组合的例子：
 
