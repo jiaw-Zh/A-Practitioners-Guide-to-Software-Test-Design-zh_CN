@@ -2,7 +2,7 @@
 
 **Lee Copeland**
 
-![出版标识](../image/contents/出版.jpg)
+![出版标识](./img/出版.jpg)
 
 Artech House出版
 
@@ -66,7 +66,7 @@ Every effort has been made to make this book as complete and accurate as possibl
 
 感谢他们这么多年的鼓励和支持
 
-![](../image/contents/作者.jpg)
+![](./img/作者.jpg)
 
 Lee Copeland是软件测试国际知名咨询师，有着30年信息系统专业经验。他有包括商业和非盈利组织中软件开发，测试，过程提升等领域的多个技术和管理职位，同时他在美国和国际范围内教授研讨会并提供广泛的咨询。
 
