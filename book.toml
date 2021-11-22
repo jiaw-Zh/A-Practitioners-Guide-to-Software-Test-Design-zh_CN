@@ -1,6 +1,0 @@
-[book]
-authors = ["noel zhang"]
-language = "zh_CN"
-multilingual = true
-src = "src"
-title = "软件测试设计从业者指南"

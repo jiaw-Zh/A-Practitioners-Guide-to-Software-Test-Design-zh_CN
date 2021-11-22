@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>1.1 测试 - 软件测试设计从业者指南</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> 简介</a></li><li class="chapter-item expanded "><a href="../../contents/contents.html"><strong aria-hidden="true">2.</strong> 目录</a></li><li class="chapter-item expanded "><a href="../../contents/backover.html"><strong aria-hidden="true">3.</strong> 封底</a></li><li class="chapter-item expanded "><a href="../../contents/a_practitioners_guide.html"><strong aria-hidden="true">4.</strong> 版权相关</a></li><li class="chapter-item expanded "><a href="../../contents/preface.html"><strong aria-hidden="true">5.</strong> 前言</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 第0节</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../section0/chapter1/overview.html"><strong aria-hidden="true">6.1.</strong> 第1章    测试过程</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../section0/chapter1/testing.html" class="active"><strong aria-hidden="true">6.1.1.</strong> 1.1 测试</a></li><li class="chapter-item expanded "><a href="../../section0/chapter1/currentChallenges.html"><strong aria-hidden="true">6.1.2.</strong> 1.2 当前挑战</a></li><li class="chapter-item expanded "><a href="../../section0/chapter1/testCases.html"><strong aria-hidden="true">6.1.3.</strong> 1.3 测试用例</a></li><li class="chapter-item expanded "><a href="../../section0/chapter1/typesOfTesting.html"><strong aria-hidden="true">6.1.4.</strong> 1.4 测试类型</a></li><li class="chapter-item expanded "><a href="../../section0/chapter1/testingLevels.html"><strong aria-hidden="true">6.1.5.</strong> 1.5 测试层级</a></li><li class="chapter-item expanded "><a href="../../section0/chapter1/TheImpossibilityOfTestingEverything.html"><strong aria-hidden="true">6.1.6.</strong> 1.6 不可能测试所有组合</a></li><li class="chapter-item expanded "><a href="../../section0/chapter1/Summary.html"><strong aria-hidden="true">6.1.7.</strong> 1.7 总结</a></li><li class="chapter-item expanded "><a href="../../section0/chapter1/Practice.html"><strong aria-hidden="true">6.1.8.</strong> 1.8 练习</a></li><li class="chapter-item expanded "><a href="../../section0/chapter1/references.html"><strong aria-hidden="true">6.1.9.</strong> 1.9 参考</a></li></ol></li><li class="chapter-item expanded "><a href="../../section0/chapter2/overview.html"><strong aria-hidden="true">6.2.</strong> 第2章    案例研究</a></li></ol></li><li class="chapter-item expanded "><a href="../../section1/section1.html"><strong aria-hidden="true">7.</strong> 第1节    黑盒测试技术</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../section1/chapter3/overview.html"><strong aria-hidden="true">7.1.</strong> 第3章    等价类划分法</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../section1/chapter3/introduction.html"><strong aria-hidden="true">7.1.1.</strong> 3.1 简介</a></li></ol></li><li class="chapter-item expanded "><a href="../../section1/chapter4/overview.html"><strong aria-hidden="true">7.2.</strong> 第4章    边界值分析法</a></li><li class="chapter-item expanded "><a href="../../section1/chapter5/overview.html"><strong aria-hidden="true">7.3.</strong> 第5章    判定表法</a></li><li class="chapter-item expanded "><a href="../../section1/chapter6/overview.html"><strong aria-hidden="true">7.4.</strong> 第6章    正交实验法</a></li><li class="chapter-item expanded "><a href="../../section1/chapter7/overview.html"><strong aria-hidden="true">7.5.</strong> 第7章    状态转换法</a></li><li class="chapter-item expanded "><a href="../../section1/chapter8/overview.html"><strong aria-hidden="true">7.6.</strong> 第8章    域分析测试</a></li><li class="chapter-item expanded "><a href="../../section1/chapter9/overview.html"><strong aria-hidden="true">7.7.</strong> 第9章    用例测试</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 第2节    白盒测试技术</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">8.1.</strong> 第10章    控制流测试</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.2.</strong> 第11章     数据流测试</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> 第3节    测试模式</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">9.1.</strong> 第12章    基于脚本的测试</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.2.</strong> 第13章    探索性测试</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.3.</strong> 第14章    测试计划</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> 第4节    技术支持</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">10.1.</strong> 第15章    缺陷分类</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.2.</strong> 第16章    什么时候停止测试</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> 第5节    终极思考</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> 附录A    Brown &amp; Donaldson Case Study</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> 附录B    Stateless University Registration System Case Study</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> 术语</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">15.</strong> 索引</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">16.</strong> List of Figures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">17.</strong> List of Tables</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">18.</strong> List of Examples</div></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">软件测试设计从业者指南</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="测试"><a class="header" href="#测试">测试</a></h2>
+<p>什么是测试？业界有很多定义，普遍比较认可的定义是：测试是比较实际结果和预期结果的过程。一个比较正式的定义是由 IEEE 在 <em>IEEE Standard 610.12-1990</em> 给出的，定义如下：</p>
+<blockquote>
+<p>在指定条件下运行系统或组件，观察或记录结果，并对系统或组件的某些方面进行评估的过程</p>
+</blockquote>
+<p>定义中提到的“指定条件”也体现在本书的主题：测试用例中。</p>
+<p>   <strong>关键点：</strong> 测试是比较实际结果和预期结果的过程。</p>
+<p>Rick Craig 和 Stefan Jaskiel 在 <em>Systematic Software Testing</em> 一书中提出了测试的扩展定义：</p>
+<blockquote>
+<p>测试是软件工程生命周期中的并发过程，利用和维护测试件以便评估和提升被测软件的质量。</p>
+</blockquote>
+<p>该视角除了包含 IEEE 对测试执行的关注之外，还包括创建测试用例时的规划、分析和设计。</p>
+<p>不同的组织和个人有各种软件测试的视角。Boris Beizer 描述了五个级别的测试成熟度。(他自己叫阶段，但是今天我们知道正确的学术术语叫做级别，通常有五个级别）</p>
+<p><strong>级别0</strong> - “测试和调试没有区别。”除了支持调试之外，测试没有任何目的。可能偶尔会发现一些缺陷，但没有正式的方法去找出它们。</p>
+<p><strong>级别1</strong> - “测试的目的是证明软件能工作。”这个观点的前提是基于软件基本上是正确实现的，因此很容易导致人们无法发现缺陷。Glenford Myers 指出这个观点会导致我们去选择不会失败的测试用例，而不会构造古怪的用例去发现深层次的问题。</p>
+<p><strong>级别2</strong> - “测试的目的是证明软件不能工作。”这是一种与上面不同的心态，它假设软件不工作，促使测试人员去发现缺陷。在这种观点指引下，我们会有意识地选择系统边缘、异常部分、角落和缝隙来构造古怪的用例。</p>
+<p><strong>级别3</strong> - “测试的目的不是为了证明什么，而是为了降低系统出问题的风险到可接受范围。”虽然我们可以证明一个系统只有一条测试用例的不通过，但却永远不可能证明系统是没有问题的，为此我们需要测试所有有效和无效输入的组合。我们的目标是依据缺陷评估软件质量，为开发人员提供有关软件缺陷的信息，以及给到管理者如果我们在当前状态下将系统交付给客户，会对我们组织造成怎样负面影响的评估。</p>
+<p><strong>级别4</strong> - “测试不是一种行为，它是一种无需太多测试就能开发出低风险软件的精神准则。”在这个成熟度级别上，我们专注于让软件从一开始就更易于测试。这包括对其需求、设计和代码的审查，另外，还意味着要编写可以协助执行测试的工具。进一步来说，包括编写自测代码，主动报告错误，而不是要求测试人员发现它们。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../section0/chapter1/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../section0/chapter1/currentChallenges.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../section0/chapter1/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../section0/chapter1/currentChallenges.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
