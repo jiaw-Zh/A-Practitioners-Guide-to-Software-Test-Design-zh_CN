@@ -20,6 +20,7 @@
 - [第1节 &nbsp;&nbsp; 黑盒测试技术](section1/section1.md)
     - [第3章 &nbsp;&nbsp; 等价类划分法](section1/chapter3/overview.md)
       - [3.1 简介](section1/chapter3/introduction.md)
+      - [3.2 技术](section1/chapter3/Technique.md)
     - [第4章 &nbsp;&nbsp; 边界值分析法](section1/chapter4/overview.md)
     - [第5章 &nbsp;&nbsp; 判定表法](section1/chapter5/overview.md)
     - [第6章 &nbsp;&nbsp; 正交实验法](section1/chapter6/overview.md)
